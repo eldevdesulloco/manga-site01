@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site teste</title>
+    <link rel="stylesheet" href="style-ler.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="top-left">
+            <a href="index.html" class="close-btn">✕</a>
+            <span class="manga-title"> <span class="badge">BETA</span></span>
+        </div>
+        <div class="top-center">
+            Página <span id="current-page-display">01</span> / <span id="total-pages-display">12</span>
+        </div>
+        <div class="top-right">
+            <button id="toggle-thumbnails" class="thumb-btn">MINIATURAS</button>
+        </div>
+    </header>
+
+    <main class="reader-main">
+        <aside id="thumbnails-sidebar" class="sidebar">
+            <h3>TODAS AS PÁGINAS</h3>
+            <div id="thumbnails-container" class="thumbnails-list"></div>
+        </aside>
+
+        <div class="page-container">
+            <button id="prev-btn" class="nav-arrow">←</button>
+            <div class="image-wrapper">
+                <span id="page-badge" class="page-badge">1 / 12</span>
+                <img id="manga-page" src="" alt="Página do Mangá">
+                <div id="page-text" class="page-text-overlay"></div>
+            </div>
+            <button id="next-btn" class="nav-arrow">→</button>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="progress-container"><div id="progress-bar" class="progress-bar"></div></div>
+        <div class="bottom-content">
+            <div class="chapter-info" id="chapter-title">Capítulo 1: Nome</div>
+            <div class="hints">CLIQUE NAS SETAS PARA VIRAR A PÁGINA</div>
+            <a href="index.html" class="close-reader">✕ FECHAR</a>
+        </div>
+    </footer>
+
+    <script src="script-ler.js"></script>
+</body>
+</html> 
