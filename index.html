@@ -3,65 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso Antecipado</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Site teste</title>
+    <link rel="stylesheet" href="style-home.css">
 </head>
 <body>
 
-    <header>
-        <h1> <span class="badge">BETA</span></h1>
-        <p>Acesso antecipado! </p>
-    </header>
+    <div id="background-monsters"></div>
 
-    <main class="reader-container">
-        <button id="prev-btn" class="nav-btn">◄ Anterior</button>
+    <nav class="navbar">
+        <div class="logo">BETA</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#personagens">Personagens</a></li>
+        </ul>
+    </nav>
 
-        <div id="book" class="book">
-            <div id="p1" class="paper">
-                <div class="front">
-                    <div id="f1" class="front-content">
-                       <img src="imagens/pagina01.jpg" style="width: 100%; height: 100%; object-fit: cover;">
-                    alt="Manga page featuring a dramatic scene with a wild-eyed man with spiky hair and a large mustache shouting Don Quixote jaa in bold letters. Other characters in the panels react with surprise and confusion, some with hearts in their eyes and others with shocked expressions. The environment is a typical manga setting with detailed backgrounds and expressive character art. The emotional tone is intense and comedic. Japanese text in the panels includes: Don Quixote jaa, Kihotee, and various speech bubbles with dialogue and exclamations."
-                    </div>
-                </div>
-                <div class="back">
-                    <div id="b1" class="back-content">
-                        <p>Página 1: O início da aventura...</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="p2" class="paper">
-                <div class="front">
-                    <div id="f2" class="front-content">
-                        <p>Página 2: Continuação da cena...</p>
-                    </div>
-                </div>
-                <div class="back">
-                    <div id="b2" class="back-content">
-                        <p>Página 3: Um personagem misterioso aparece!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="p3" class="paper">
-                <div class="front">
-                    <div id="f3" class="front-content">
-                        <p>Página 4: Fim do capítulo.</p>
-                    </div>
-                </div>
-                <div class="back">
-                    <div id="b3" class="back-content">
-                        <h2>Fim da Versão Beta!</h2>
-                        <p>Obrigado por ler. Deixe seu feedback!</p>
-                    </div>
-                </div>
-            </div>
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <img src="imagens/eb4c737c0c4cf840f029569dc1e622c8.jpg" alt="Capa The Last of The Creators">
         </div>
+        
+        <div class="hero-content">
+            <span class="badge"> BETA</span>
+            <h1>Teste</h1>
+            <h2>Capítulo 1 Disponível</h2>
+            <p>Texto base ou resumo do capítulo 1.</p>
+            
+            <a href="ler.html" class="btn-read">Ler Capítulo 1 Agora</a>
+        </div>
+    </section>
 
-        <button id="next-btn" class="nav-btn">Próxima ►</button>
-    </main>
+    <section id="personagens" class="characters-section">
+        <h2 class="section-title">Conheça os Personagens</h2>
+        <div class="character-grid">
+            <div class="char-card"><img src="imagens/Personagem1.png" alt="Personagem 1"></div>
+            <div class="char-card"><img src="imagens/Personagem2.jpg" alt="Personagem 2"></div>
+            <div class="char-card"><img src="imagens/Personagem3.jpg" alt="Personagem 3"></div>
+            <div class="char-card"><img src="imagens/Personagem4.jpg" alt="Personagem 4"></div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <script src="script-home.js"></script>
 </body>
 </html>
